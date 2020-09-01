@@ -1,5 +1,6 @@
 package com.cybertek.tests.Vytrack_Prjct;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -9,6 +10,7 @@ public class Login_Functionality {
     public static void main(String[] args) throws InterruptedException {
 
 
+        WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.get("https://qa2.vytrack.com/user/login");
