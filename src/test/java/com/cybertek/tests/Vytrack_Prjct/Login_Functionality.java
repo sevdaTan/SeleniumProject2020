@@ -20,21 +20,26 @@ public class Login_Functionality {
         WebElement password = driver.findElement(By.name("_password"));
         WebElement login = driver.findElement(By.id("_submit"));
 
-        username.sendKeys("salesmanager262");
+        username.sendKeys("user162");
         Thread.sleep(2000);
         password.sendKeys("UserUser123");
-        //Thread.sleep(2000);
+        Thread.sleep(2000);
         login.click();
         Thread.sleep(4000);
 
-        String actualURL = driver.getCurrentUrl();
-        String expectedURL = "https://qa2.vytrack.com/user/login";
+        driver.findElement(By.id("user-menu")).click();
+        Thread.sleep(3000);
 
-        if (actualURL.equals(expectedURL)) {
-            System.out.println("Login Functionality: PASSED!");
-        } else {
-            System.out.println("Login Functionality: FAILED!");
-        }
+        driver.findElement(By.linkText("Logout")).click();
+
+//        String actualURL = driver.getCurrentUrl();
+//        String expectedURL = "https://qa2.vytrack.com/user/login";
+//
+//        if (expectedURL.equals(actualURL)) {
+//            System.out.println("Login Functionality: Passed!");
+//        } else {
+//            System.out.println("Login Functionality: Failed!");
+//        }
         Thread.sleep(5000);
 
         driver.close();
