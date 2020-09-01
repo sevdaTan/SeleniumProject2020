@@ -18,7 +18,7 @@ public class Login_Functionality {
         WebElement password = driver.findElement(By.name("_password"));
         WebElement login = driver.findElement(By.id("_submit"));
 
-        username.sendKeys("salesmanager262");
+        username.sendKeys("user162");
         Thread.sleep(2000);
         password.sendKeys("UserUser123");
         Thread.sleep(2000);
@@ -36,6 +36,6 @@ public class Login_Functionality {
         Thread.sleep(5000);
 
         driver.close();
-
+//src/test/java/com/cybertek/tests/Vytrack_Prjct/Login_Functionality.java
     }
 }
