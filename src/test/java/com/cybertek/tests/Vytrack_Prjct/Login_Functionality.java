@@ -20,10 +20,10 @@ public class Login_Functionality {
         WebElement password = driver.findElement(By.name("_password"));
         WebElement login = driver.findElement(By.id("_submit"));
 
-        username.sendKeys("user162");
+        username.sendKeys("salesmanager262");
         Thread.sleep(2000);
         password.sendKeys("UserUser123");
-        Thread.sleep(2000);
+        //Thread.sleep(2000);
         login.click();
         Thread.sleep(4000);
 
