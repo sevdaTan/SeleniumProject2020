@@ -32,14 +32,14 @@ public class Login_Functionality {
 
         driver.findElement(By.linkText("Logout")).click();
 
-//        String actualURL = driver.getCurrentUrl();
-//        String expectedURL = "https://qa2.vytrack.com/user/login";
-//
-//        if (expectedURL.equals(actualURL)) {
-//            System.out.println("Login Functionality: Passed!");
-//        } else {
-//            System.out.println("Login Functionality: Failed!");
-//        }
+        String actualURL = driver.getCurrentUrl();
+        String expectedURL = "https://qa2.vytrack.com/user/login";
+
+        if (expectedURL.equals(actualURL)) {
+            System.out.println("Login Functionality: Passed!");
+        } else {
+            System.out.println("Login Functionality: Failed!");
+        }
         Thread.sleep(5000);
 
         driver.close();
