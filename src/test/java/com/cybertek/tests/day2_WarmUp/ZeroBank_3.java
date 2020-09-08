@@ -1,4 +1,4 @@
-package com.cybertek.tests.day3_;
+package com.cybertek.tests.day2_WarmUp;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
