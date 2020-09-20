@@ -42,7 +42,7 @@ public class TC2_SelectingStateDropdown {
     }
     @AfterMethod
     public void teardownMethod(){
-        driver.quit();
+        driver.close();
     }
 
 

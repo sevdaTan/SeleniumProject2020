@@ -12,7 +12,8 @@ import org.testng.annotations.Test;
 import java.util.concurrent.TimeUnit;
 
 /*
-Verifying “Simple dropdown” and “State selection” dropdown default values 1. Open Chrome browser
+Verifying “Simple dropdown” and “State selection” dropdown default values
+1. Open Chrome browser
 2. Go to http://practice.cybertekschool.com/dropdown
 3. Verify “Simple dropdown” default selected value is correct
 Expected: “Please select an option”
