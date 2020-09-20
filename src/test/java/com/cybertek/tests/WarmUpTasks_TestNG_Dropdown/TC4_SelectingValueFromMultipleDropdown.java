@@ -47,12 +47,20 @@ public class TC4_SelectingValueFromMultipleDropdown {
 
         for(WebElement each : allSelectedOptions){
             System.out.println(each.getText());
+            System.out.println("Selected: "+ each.getText());
            Thread.sleep(1000);
+
+
         }
 
         //5. Deselect all values.
         multipleDropdownElement.deselectAll();
         Thread.sleep(1000);
+//        for (WebElement each : allSelectedOptions){
+//            Assert.assertTrue(!each.isSelected());
+//            // it will be false boolean value, with ! we make it "True"
+   //     }
+
     }
 
     @AfterMethod

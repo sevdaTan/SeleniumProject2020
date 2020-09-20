@@ -68,7 +68,7 @@ public class TC3_SelectingDate {
     }
     @AfterMethod
     public void teardownMethod(){
-        driver.quit();
+        driver.close();
     }
 
 
