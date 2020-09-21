@@ -1,4 +1,4 @@
-package com.cybertek.tests.WarmUpTasks_TestNG_Dropdown;
+package com.cybertek.tests.WarmUpTasks.TestNG_Dropdown;
 
 import com.cybertek.utilities.WebDriverFactory;
 import org.openqa.selenium.By;
