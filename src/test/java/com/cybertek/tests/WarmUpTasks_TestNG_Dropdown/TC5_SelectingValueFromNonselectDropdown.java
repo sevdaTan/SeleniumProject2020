@@ -33,22 +33,24 @@ public class TC5_SelectingValueFromNonselectDropdown {
     @Test
     public void nonSelectDropdown() throws InterruptedException {
         WebElement dropdownMenuLink = driver.findElement(By.id("dropdownMenuLink"));
+        // By.xpath("//div[@class='dropdown']/a") ==> parent to child example
         dropdownMenuLink.click();
         Thread.sleep(2000);
 
         //4. Select Facebook from dropdown
         driver.findElement(By.linkText("Facebook")).click();
+        // By.xpath("//a[.='Facebook']")
         Thread.sleep(1000);
 
         //5. Verify title is “Facebook - Log In or Sign Up”
         String actualTitle = driver.getTitle();
         String expectedTitle = "Facebook - Log In or Sign Up";
-    Thread.sleep(2000);
+        Thread.sleep(2000);
         Assert.assertEquals(actualTitle,expectedTitle,"The title is not matching, Verification Failed!");
     }
 
-    @AfterMethod
-    public void teardownMethod(){
+        @AfterMethod
+        public void teardownMethod(){
         driver.close();
     }
 
