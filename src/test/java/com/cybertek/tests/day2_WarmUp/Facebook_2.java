@@ -37,7 +37,7 @@ public class Facebook_2 {
             System.out.println("Fail");
         }
 
-
+        driver.close();
 
     }
 }

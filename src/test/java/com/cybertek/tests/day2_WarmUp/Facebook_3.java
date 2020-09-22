@@ -27,7 +27,7 @@ public class Facebook_3 {
         }else{
             System.out.println("Header Verification Failed!");
         }
-
+            driver.close();
 
     }
 }

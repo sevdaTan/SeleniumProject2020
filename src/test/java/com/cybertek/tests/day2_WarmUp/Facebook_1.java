@@ -9,7 +9,7 @@ C #1: Facebook title verification
 1.Open Chrome browser
 2.Go to https://www.facebook.com
 3.Verify title:
-Expected: “Facebook -Log In or Sign Up”
+Expected: “Facebook - Log In or Sign Up”
  */
 public class Facebook_1 {
     public static void main(String[] args) throws InterruptedException {
@@ -22,7 +22,7 @@ public class Facebook_1 {
 
         driver.get("https://www.facebook.com");
 
-        String expectedTitle = "Facebook -Log In or Sign Up";
+        String expectedTitle = "Facebook - Log In or Sign Up";
         String actualTitle = driver.getTitle();
 
         if (actualTitle.equals(expectedTitle)) {
@@ -30,6 +30,6 @@ public class Facebook_1 {
         }else{
             System.out.println("Verify Title FAILED!");
         }
-
+        driver.close();
     }
 }
