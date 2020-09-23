@@ -63,7 +63,8 @@ public class WarmupTask {
             System.out.println("Confirmation message is not displayed. Verification is failed!");
 
         }
-       // driver.close();
+        Thread.sleep(3000);
+        driver.close();
 
 
 
