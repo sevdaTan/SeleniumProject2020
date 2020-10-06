@@ -1,4 +1,4 @@
-package com.cybertek.tests.Vytrack_Prjct;
+package com.cybertek.tests.project_Vytrack;
 
 import com.cybertek.utilities.WebDriverFactory;
 import org.openqa.selenium.By;
